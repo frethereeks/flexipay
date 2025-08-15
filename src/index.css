@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* --color-primary: #1890ff; */
+  --color-primary: #34c8ea;
+  --color-warning: #faad14;
+  --color-secondary: #f58a3d;
+  --color-backdrop: #f7faff;
+  --color-text: #718090;
+  --color-dark: #0d487e;
+  --color-success: #00c9a7;
+
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
