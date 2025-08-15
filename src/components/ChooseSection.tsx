@@ -71,7 +71,7 @@ export default function ChooseSection() {
                     </div>
                 </aside>
                 <aside className="bg-backdrop rounded-sm p-4 md:p-5 space-y-2">
-                    <h3 data-aos="fade-right" data-aos-delay="1500" className="text-base md:text-lg text-dark font-semibold">Recognition & Membership</h3>
+                    <h3 data-aos="fade-up" data-aos-delay="1500" className="text-base md:text-lg text-dark font-semibold">Recognition & Membership</h3>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-5">
                         {
                             recognitionData.map((el,i) => (
@@ -82,7 +82,7 @@ export default function ChooseSection() {
                             ))
                         }
                     </div>
-                    <h3 data-aos="fade-right" data-aos-delay="1000" className="text-base md:text-lg text-dark font-semibold mt-6 md:mt-12">Recent Projects & Results</h3>
+                    <h3 data-aos="fade-up" data-aos-delay="1000" className="text-base md:text-lg text-dark font-semibold mt-6 md:mt-12">Recent Projects & Results</h3>
                     <div className="space-y-4">
                         {
                             projectResultData.map((el, i) => (

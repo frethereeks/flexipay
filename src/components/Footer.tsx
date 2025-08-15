@@ -9,26 +9,26 @@ export default function Footer() {
             <footer className='relative z-20 bg-dark pt-10 md:pt-16 px-4'>
                 <div className="container mx-auto grid sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 text-white">
                     <aside className="space-y-4 md:col-span-2">
-                        <div className="w-max p-2 bg-backdrop">
+                        <div data-aos="fade-right" data-aos-delay="200" className="w-max p-2 bg-backdrop">
                             <Link to="/" className='flex items-center gap-2 w-[10rem]'>
                                 <div className="h-10 rounded-full relative">
                                     <img src={ASSETS_URL['logo']} alt="flexipay logo" className="relative top-0 left-0 h-full bg-cover" />
                                 </div>
                             </Link>
                         </div>
-                        <p className="md:max-w-sm text-sm text-backdrop/50 font-medium leading-loose">Choose the plan that best fits your financial needs and embark on your journey to land ownership</p>
+                        <p data-aos="fade-up" data-aos-delay="500" className="md:max-w-sm text-sm text-backdrop/50 font-medium leading-loose">Choose the plan that best fits your financial needs and embark on your journey to land ownership</p>
                     </aside>
                     <aside className="space-y-1">
-                        <h4 className="text-lg text-white font-semibold pb-2">Useful Links</h4>
-                        <Link className='flex text-backdrop/70 hover:text-backdrop text-sm p-1' to="/"> About </Link>
-                        <Link className='flex text-backdrop/70 hover:text-backdrop text-sm p-1' to="/"> Plans </Link>
-                        <Link className='flex text-backdrop/70 hover:text-backdrop text-sm p-1' to="/"> Contact </Link>
+                        <h4 data-aos="fade-left" data-aos-delay="500" className="text-lg text-white font-semibold pb-2">Useful Links</h4>
+                        <Link data-aos="zoom-out" data-aos-delay="600" className='flex text-backdrop/70 hover:text-backdrop text-sm p-1' to="/"> About </Link>
+                        <Link data-aos="zoom-out" data-aos-delay="800" className='flex text-backdrop/70 hover:text-backdrop text-sm p-1' to="/"> Plans </Link>
+                        <Link data-aos="zoom-out" data-aos-delay="1000" className='flex text-backdrop/70 hover:text-backdrop text-sm p-1' to="/"> Contact </Link>
                     </aside>
                     <aside className="space-y-1">
-                        <h4 className="text-lg text-white font-semibold pb-2">Legal Links</h4>
-                        <Link className='flex text-backdrop/70 hover:text-backdrop text-sm p-1' to="/terms-and-conditions">Terms and Conditions</Link>
-                        <Link className='flex text-backdrop/70 hover:text-backdrop text-sm p-1' to="/privacy-policy">Privacy Policy</Link>
-                        <Link className='flex gap-2 items-center text-backdrop/70 hover:text-backdrop text-sm p-1' to="https://oakyardproperties.com" target="_blank" rel="noopener noreferrer">Oakyard Properties <LuArrowUpRight className="text-xs" /></Link>
+                        <h4 data-aos="fade-left" data-aos-delay="500" className="text-lg text-white font-semibold pb-2">Legal Links</h4>
+                        <Link data-aos="zoom-up" data-aos-delay="700" className='flex text-backdrop/70 hover:text-backdrop text-sm p-1' to="/terms-and-conditions">Terms and Conditions</Link>
+                        <Link data-aos="zoom-up" data-aos-delay="900" className='flex text-backdrop/70 hover:text-backdrop text-sm p-1' to="/privacy-policy">Privacy Policy</Link>
+                        <Link data-aos="zoom-up" data-aos-delay="1100" className='flex gap-2 items-center text-backdrop/70 hover:text-backdrop text-sm p-1' to="https://oakyardproperties.com" target="_blank" rel="noopener noreferrer">Oakyard Properties <LuArrowUpRight className="text-xs" /></Link>
                     </aside>
                     <div className="col-start-1 -col-end-1 flex flex-col md:flex-row items-center md:items-stretch justify-between gap-4 p-4 mt-6 border-t border-slate-50/10">
                         <p className="text-xs text-backdrop/40">&copy; {new Date().getFullYear()} FlexiPay. All rights reserved</p>
