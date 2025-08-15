@@ -9,10 +9,10 @@ export default function HeroSection() {
             <div className="relative flex flex-col-reverse md:grid md:grid-cols-5 gap-10 py-10 px-4">
                 <aside className="flex-1 col-span-2 md:py-20">
                     <div className="md:max-w-xl space-y-4 md:space-y-8">
-                        <h2 data-aos="fade-down" className="font-sans text-3xl md:text-5xl font-bold text-primary">Masters <span className="text-dark">of Consistency and</span> Quality</h2>
+                        <h2 data-aos="fade-down" className="font-sans text-xl sm:text-3xl md:text-5xl font-bold text-primary">Masters <span className="text-dark">of Consistency and</span> Quality</h2>
                         <p data-aos="fade-right" data-aos-delay="500" className="text-base md:text-lg text-text">Flexipay simplifies land acquisition with flexible monthly payment plans, making property ownership accessible and secure for everyone to start building for the future from today.</p>
                         <div className="flex gap-4 md:gap-8">
-                            <Link data-aos="fade-left" data-aos-delay="1000" to={"/donation"} className="relative flex gap-2 items-center self-center w-max px-8 md:px-10 py-2 h-max border border-dark bg-dark text-white text-base font-semibold rounded-sm">Learn More <LuArrowUpRight className="text-xs" /></Link>
+                            <Link data-aos="fade-left" data-aos-delay="1000" to={"/donation"} className="relative flex gap-2 items-center self-center w-max whitespace-nowrap px-4 md:px-10 py-2 h-max border border-dark bg-dark text-white text-base font-semibold rounded-sm">Learn More <LuArrowUpRight className="text-xs" /></Link>
                             <Link data-aos="fade-up" data-aos-delay="1500" to={"/donation"} className="relative flex gap-2 items-center self-center w-max px-8 md:px-8 py-2 h-max border border-primary bg-transparent hover:bg-primary text-primary hover:text-white text-base font-semibold rounded-sm">Contact Us <ArrowDownOutlined className="text-xs -rotate-45 translate-y-1" /></Link>
                         </div>
                     </div>

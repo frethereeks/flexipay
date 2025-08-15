@@ -25,7 +25,7 @@ export default function Header() {
     return (
         <header className='bg-white md:p-2 md:rounded-full fixed top-0 md:top-4 left-0 md:left-1/2 md:-translate-x-1/2 w-full md:container z-50 shadow-lg'>
             <div className="container mx-auto relative flex justify-between md:items-center gap-4 p-4 md:p-0">
-                <Link to="/" className='flex items-center gap-2 w-[10rem]'>
+                <Link to="/" className='flex items-center gap-2 w-[10rem] pr-2'>
                     <div className="h-10 rounded-full relative">
                         <img src={ASSETS_URL['logo']} alt="flexipay logo" className="relative top-0 left-0 h-full bg-cover" />
                     </div>
