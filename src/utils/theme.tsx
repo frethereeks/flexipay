@@ -44,6 +44,7 @@ export const theme: ThemeConfig = {
             labelFontSize: 13,
             verticalLabelMargin: "-6px 0",
             colorError: THEME_COLOR.secondary,
+            labelColor: THEME_COLOR.text,
         },
         Button: {
             primaryColor: THEME_COLOR.backdrop,

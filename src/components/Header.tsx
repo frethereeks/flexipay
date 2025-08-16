@@ -4,8 +4,9 @@ import { RiMenu3Fill, RiWhatsappLine } from 'react-icons/ri';
 import { ASSETS_URL } from '../assets';
 
 export default function Header() {
-    const location = useLocation();
-    const [navOpen, setNavOpen] = useState(false);
+    const location = useLocation()
+    const [navOpen, setNavOpen] = useState(false)
+    const [currentPage, setCurrentPage] = useState(false)
 
     useEffect(() => {
         // This effect can be used to handle any side effects when the location changes
@@ -14,6 +15,13 @@ export default function Header() {
             window.scrollTo(0, 0);
         }
     }, [location.pathname]);
+    
+    const handlePathChange = () => {
+        console.log({ location })
+        if (location.pathname === "/" || location.pathname === "/#") {
+            // setCurrentPage()
+        }
+    }
 
 
     const navLinks = [
@@ -35,7 +43,7 @@ export default function Header() {
                 <nav className={`flex-1 bg-backdrop md:bg-white w-full absolute md:static top-full ${navOpen ? "left-0" : "left-full"} transition-all duration-300 flex flex-col md:flex-row justify-center md:items-center md:gap-2`}>
                     {
                         navLinks.map((link) => (
-                            <a className={`${link.path === location.pathname ? 'text-white bg-dark' : 'text-primary hover:text-white hover:bg-dark'} font-semibold py-1.5 px-4 text-sm md:rounded-md`} key={link.id} href={`/#${link.path}`}>{link.name}</a>
+                            <a onClick={handlePathChange} className={`${link.path !== '' && location.hash.includes(link.path) ? 'text-white bg-dark' : 'text-primary hover:text-white hover:bg-dark'} font-semibold py-1.5 px-4 text-sm md:rounded-md`} key={link.id} href={`/#${link.path}`}>{link.name}</a>
                         ))
                     }
                 </nav>

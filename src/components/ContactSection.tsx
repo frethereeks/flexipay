@@ -1,6 +1,6 @@
 
 import { RiMapPinLine, RiTimeLine } from 'react-icons/ri'
-import { App, Form, Input } from 'antd'
+import { Form, Input, notification } from 'antd'
 import TextArea from 'antd/es/input/TextArea'
 
 type TContactProps = {
@@ -12,15 +12,14 @@ type TContactProps = {
 
 export default function ContactSection() {
     const [form] = Form.useForm<TContactProps>()
-    const {notification} = App.useApp()
     const GOOGLE_MAP = import.meta.env.VITE_GOOGLE_MAP
 
     const handleSubmit = async (data: TContactProps) => {
-        console.log('data', data)
-        const fullname = encodeURI(data.fullname)
+        // const fullname = encodeURI(data.fullname)
         notification.success({ message: `Thank you for reaching us ${data.fullname}. We will get back to you as soon as possible. Please wait...` })
+        const message = encodeURI(`Hi, my name is ${data.fullname}. I am reaching out to inquire about the flexipay plans`)
         setTimeout(() => {
-            window.location.href = `https://wa.me/2349088888733?text=Hi%20My%20name%20is%20${fullname}%20and%20I%20am%20reaching%20out%20to%20inquire%about%20the%20flexipay%20plans`
+            window.location.href = `https://wa.me/2349088888733?text=${message}`
         }, 1500);
     }
 
@@ -36,20 +35,20 @@ export default function ContactSection() {
                         <figure className="h-8 w-8 md:h-9 md:w-9 bg-text/10 rounded-full grid place-items-center text-base md:text-lg text-text">
                             <RiMapPinLine />
                         </figure>
-                        <div className="relative max-w-[14rem]">
-                            <h4 className="text-sm text-primary font-semibold">Address</h4>
-                            <p className="text-xs text-text font-medium">Suite 16 & 17, Grey Sapphire Mall, No. 3, Atakpame Street, Opp. Chocolate Mall, Wuse 2, Abuja, Nigeria.</p>
+                        <div className="relative max-w-[16rem]">
+                            <h4 className="text-base md:text-sm text-primary font-semibold">Address</h4>
+                            <p className="text-sm md:text-xs text-text font-medium">Suite 16 & 17, Grey Sapphire Mall, No. 3, Atakpame Street, Opp. Chocolate Mall, Wuse 2, Abuja, Nigeria.</p>
                         </div>
                     </div>
                     <div data-aos="fade-up" data-aos-delay="1500" className="flex gap-4 py-2">
                         <figure className="h-8 w-8 md:h-9 md:w-9 bg-text/10 rounded-full grid place-items-center text-base md:text-lg text-text">
                             <RiTimeLine />
                         </figure>
-                        <div className="relative max-w-[14rem]">
-                            <h4 className="text-sm text-primary font-semibold">Office Hours</h4>
-                            <p className="text-xs text-text font-medium">Monday - Friday: 8:30AM - 5:00PM.</p>
-                            <p className="text-xs text-text font-medium">Saturday: Closed.</p>
-                            <p className="text-xs text-text font-medium">Sunday: Closed.</p>
+                        <div className="relative max-w-[16rem]">
+                            <h4 className="text-base md:text-sm text-primary font-semibold">Office Hours</h4>
+                            <p className="text-sm md:text-xs text-text font-medium">Monday - Friday: 8:30AM - 5:00PM.</p>
+                            <p className="text-sm md:text-xs text-text font-medium">Saturday: Closed.</p>
+                            <p className="text-sm md:text-xs text-text font-medium">Sunday: Closed.</p>
                         </div>
                     </div>
                 </aside>
@@ -60,9 +59,6 @@ export default function ContactSection() {
                         form={form}
                         layout='vertical'
                         onFinish={handleSubmit}
-                        initialValues={{
-                            country: 'Nigeria',
-                        }}
                         className='md:px-6'
                         size='middle'
                     >

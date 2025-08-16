@@ -1,3 +1,4 @@
+import { RiCheckboxCircleFill } from "react-icons/ri";
 import { ASSETS_URL } from "../assets";
 
 export default function TermsAndConditions() {
@@ -24,12 +25,12 @@ export default function TermsAndConditions() {
                     <div className="space-y-1">
                         <h4 data-aos="fade-up" data-aos-delay="300" className="text-text text-base font-semibold">3. Default Clause</h4>
                         <p data-aos="fade-up" data-aos-delay="400" className="text-sm text-text/90 text-justify font-medium pl-4 leading-loose">Failure to pay for three (3) consecutive months constitutes a breach of this agreement. The company reserves the right to:</p>
-                        <ul className="list-inside list-disc text-text pl-2 space-y-2">
-                            <li className="text-sm px-2">Revoke the land allocation,</li>
-                            <li className="text-sm px-2">Resell the plot after which,</li>
-                            <li className="text-sm px-2">Apply an administrative deduction of 30% from any amount already paid before any refund consideration,</li>
-                            <li className="text-sm px-2">Charge additional default penalties where applicable.</li>
-                        </ul>
+                        <div data-aos="fade-up" data-aos-delay="400" className="text-sm text-text">
+                            <p className="flex gap-2 pl-4 py-1"><RiCheckboxCircleFill className="text-[.6rem] text-text translate-y-1.5 flex-shrink-0" />Revoke the land allocation,</p>
+                            <p className="flex gap-2 pl-4 py-1"><RiCheckboxCircleFill className="text-[.6rem] text-text translate-y-1.5 flex-shrink-0" />Resell the plot after which,</p>
+                            <p className="flex gap-2 pl-4 py-1"><RiCheckboxCircleFill className="text-[.6rem] text-text translate-y-1.5 flex-shrink-0" />Apply an administrative deduction of 30% from any amount already paid before any refund consideration,</p>
+                            <p className="flex gap-2 pl-4 py-1"><RiCheckboxCircleFill className="text-[.6rem] text-text translate-y-1.5 flex-shrink-0" />Charge additional default penalties where applicable.</p>
+                        </div>
                     </div>
                     <div className="space-y-1">
                         <h4 data-aos="fade-up" data-aos-delay="100" className="text-text text-base font-semibold">4. Allocation of Plot</h4>
@@ -38,20 +39,20 @@ export default function TermsAndConditions() {
                     <div className="space-y-1">
                         <h4 data-aos="fade-up" data-aos-delay="300" className="text-text text-base font-semibold">5. Documentation Upon Completion</h4>
                         <p data-aos="fade-up" data-aos-delay="400" className="text-sm text-text/90 text-justify font-medium pl-4 leading-loose">Upon completion of payment, the following documents shall be issued to the client:</p>
-                        <ul className="list-inside list-disc text-text pl-4 space-y-2">
-                            <li className="text-sm px-2">Deed of Assignment & Power of Attorney</li>
-                            <li className="text-sm px-2">Survey Plan</li>
-                            <li className="text-sm px-2">Letter of Allocation</li>
-                        </ul>
+                        <div data-aos="fade-up" data-aos-delay="400" className="text-sm text-text">
+                            <p className="flex gap-2 pl-4 py-1"><RiCheckboxCircleFill className="text-[.6rem] text-text translate-y-1.5 flex-shrink-0" />Deed of Assignment & Power of Attorney</p>
+                            <p className="flex gap-2 pl-4 py-1"><RiCheckboxCircleFill className="text-[.6rem] text-text translate-y-1.5 flex-shrink-0" />Survey Plan</p>
+                            <p className="flex gap-2 pl-4 py-1"><RiCheckboxCircleFill className="text-[.6rem] text-text translate-y-1.5 flex-shrink-0" />Letter of Allocation</p>
+                        </div>
                     </div>
                     <div className="space-y-1">
                         <h4 data-aos="fade-up" data-aos-delay="300" className="text-text text-base font-semibold">6. Change of Payment Plan</h4>
                         <p data-aos="fade-up" data-aos-delay="400" className="text-sm text-text/90 text-justify font-medium pl-4 leading-loose">Any variation from the agreed monthly payment structure must be:</p>
-                        <ul className="list-inside list-disc text-text pl-4 space-y-2">
-                            <li className="text-sm px-2">Formally requested in writing by the client</li>
-                            <li className="text-sm px-2">Subject to approval by Oakyard Properties Limited</li>
-                            <li className="text-sm px-2">May attract a ₦20,000 restructuring fee</li>
-                        </ul>
+                        <div data-aos="fade-up" data-aos-delay="400" className="text-sm text-text">
+                            <p className="flex gap-2 pl-4 py-1"><RiCheckboxCircleFill className="text-[.6rem] text-text translate-y-1.5 flex-shrink-0" />Formally requested in writing by the client</p>
+                            <p className="flex gap-2 pl-4 py-1"><RiCheckboxCircleFill className="text-[.6rem] text-text translate-y-1.5 flex-shrink-0" />Subject to approval by Oakyard Properties Limited</p>
+                            <p className="flex gap-2 pl-4 py-1"><RiCheckboxCircleFill className="text-[.6rem] text-text translate-y-1.5 flex-shrink-0" />May attract a ₦20,000 restructuring fee</p>
+                        </div>
                     </div>
                     <div className="space-y-1">
                         <h4 data-aos="fade-up" data-aos-delay="100" className="text-text text-base font-semibold">7. Legal Jurisdiction</h4>

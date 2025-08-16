@@ -29,7 +29,7 @@ export default function ClientSection() {
               <p data-aos="fade-up" data-aos-delay="1000" className="text-base text-backdrop font-medium leading-relaxed py-4">"Me and my husband have been on the lookout for a good opportunity to tap into the real estate market, oakyard properties availed us that opportunity and they made it so seemless."</p>
               <div className="space-y-0">
                 <h5 data-aos="fade-up" data-aos-delay="1000" className="text-base text-backdrop/70 font-medium leading-tight">Mrs. Amaka Agunwa</h5>
-                <p data-aos="fade-up" data-aos-delay="1000" className="text-xs text-text font-medium leading-relaxed">Katampe Plan Beneficiary</p>
+                <p data-aos="fade-up" data-aos-delay="1000" className="text-xs text-text font-medium leading-relaxed">Katampe Extension Plan Beneficiary</p>
               </div>
             </aside>
           </SwiperSlide>
@@ -38,7 +38,7 @@ export default function ClientSection() {
               <p data-aos="fade-up" data-aos-delay="1000" className="text-base text-backdrop font-medium leading-relaxed py-4">"Nobody likes to be cheated out of their money so, I was skeptical when I first invested with Oakyard Properties but after coming through excellently the 4th time of doing business with them, I knew these guys are not joking around."</p>
               <div className="space-y-0">
                 <h5 data-aos="fade-up" data-aos-delay="1000" className="text-base text-backdrop/70 font-medium leading-tight">Engr. Andrew Adeiza</h5>
-                <p data-aos="fade-up" data-aos-delay="1000" className="text-xs text-text font-medium leading-relaxed">Life Camp Housing Plan</p>
+                <p data-aos="fade-up" data-aos-delay="1000" className="text-xs text-text font-medium leading-relaxed">Kyami Housing Plan</p>
               </div>
             </aside>
           </SwiperSlide>
@@ -47,7 +47,7 @@ export default function ClientSection() {
               <p data-aos="fade-up" data-aos-delay="1000" className="text-base text-backdrop font-medium leading-relaxed py-4">"I can confidently say the best decision of my life is partnering with oakyard properties on the Jahi Resettlement Plan, I not only became a land owner but a house owner too!"</p>
               <div className="space-y-0">
                 <h5 data-aos="fade-up" data-aos-delay="1000" className="text-base text-backdrop/70 font-medium leading-tight">Mr. Chibuzo Ikechukwu</h5>
-                <p data-aos="fade-up" data-aos-delay="1000" className="text-xs text-text font-medium leading-relaxed">Katampe Plan Beneficiary</p>
+                <p data-aos="fade-up" data-aos-delay="1000" className="text-xs text-text font-medium leading-relaxed">Katampe Extension Plan Beneficiary</p>
               </div>
             </aside>
           </SwiperSlide>

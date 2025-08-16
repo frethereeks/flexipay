@@ -1,10 +1,6 @@
-// import React from 'react'
-import { ChooseSection, ClientSection, ContactSection, HeroSection, PlanSection } from '../components'
-
-
+import { ChooseSection, ClientSection, ContactSection, FaqSection, HeroSection, PlanSection } from '../components'
 
 export default function Home() {
-
 
     return (
         <>
@@ -22,6 +18,9 @@ export default function Home() {
             </section>
             <section id='contact' className="relative py-10 px-4">
                 <ContactSection />
+            </section>
+            <section id='faq' className="relative">
+                <FaqSection />
             </section>
         </>
     )

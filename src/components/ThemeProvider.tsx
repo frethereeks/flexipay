@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { ConfigProvider } from "antd";
+import { ConfigProvider} from "antd";
 import { theme } from "../utils/theme";
 import Aos from 'aos'
 import "aos/dist/aos.css"
