@@ -6,7 +6,6 @@ import { ASSETS_URL } from '../assets';
 export default function Header() {
     const location = useLocation()
     const [navOpen, setNavOpen] = useState(false)
-    const [currentPage, setCurrentPage] = useState(false)
 
     useEffect(() => {
         // This effect can be used to handle any side effects when the location changes
