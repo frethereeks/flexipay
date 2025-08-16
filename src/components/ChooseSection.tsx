@@ -1,8 +1,9 @@
 import { LuArrowUpRight } from 'react-icons/lu'
 import { RiAwardLine, RiBuildingLine, RiGovernmentLine, RiMedal2Line, RiPresentationFill, RiScales3Line } from 'react-icons/ri'
-import { Link } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 export default function ChooseSection() {
+    const { pathname } = useLocation()
 
     const recognitionData = [
         {
@@ -67,7 +68,7 @@ export default function ChooseSection() {
                         <h2 data-aos="fade-up" data-aos-delay="100" className="text-2xl md:text-2xl text-primary font-semibold">Why Choose Flexipay?</h2>
                         <h4 data-aos="fade-up" data-aos-delay="500" className="text-dark text-2xl md:text-4xl font-bold">Civil Servants Land Acquisition Plan</h4>
                         <p data-aos="fade-up" data-aos-delay="1000" className="text-base text-text font-medium leading-relaxed py-4">We are geared towards elevating the real-estate standard, house ownership plans by providing comprehensive solutions tailored to your unique project needs to ensure quality, efficient and an incredible level of client satisfaction every step of the way.</p>
-                        <Link data-aos="fade-right" data-aos-delay="1500" to={"#contact"} className="relative flex gap-2 items-center self-center w-max mt-2 px-6 md:px-8 py-1.5 h-max border border-primary hover:bg-transparent bg-primary hover:text-primary text-white text-base font-semibold rounded-sm">Get Started <LuArrowUpRight className="text-xs" /></Link>
+                        <a data-aos="fade-right" data-aos-delay="1500" href={`${pathname}#contact`} className="relative flex gap-2 items-center self-center w-max mt-2 px-6 md:px-8 py-1.5 h-max border border-primary hover:bg-transparent bg-primary hover:text-primary text-white text-base font-semibold rounded-sm">Get Started <LuArrowUpRight className="text-xs" /></a>
                     </div>
                 </aside>
                 <aside className="bg-backdrop rounded-sm p-4 md:p-5 space-y-2">

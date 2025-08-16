@@ -14,7 +14,7 @@ export default function Home() {
             <section id='plan' className="relative">
                 <PlanSection />
             </section>
-            <section id='choose' className="relative">
+            <section id='about' className="relative">
                 <ChooseSection />
             </section>
             <section id='client' className="relative">

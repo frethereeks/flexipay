@@ -1,6 +1,6 @@
 
 import { RiMapPinLine, RiTimeLine } from 'react-icons/ri'
-import { Form, Input } from 'antd'
+import { App, Form, Input } from 'antd'
 import TextArea from 'antd/es/input/TextArea'
 
 type TContactProps = {
@@ -12,10 +12,16 @@ type TContactProps = {
 
 export default function ContactSection() {
     const [form] = Form.useForm<TContactProps>()
+    const {notification} = App.useApp()
     const GOOGLE_MAP = import.meta.env.VITE_GOOGLE_MAP
 
     const handleSubmit = async (data: TContactProps) => {
         console.log('data', data)
+        const fullname = encodeURI(data.fullname)
+        notification.success({ message: `Thank you for reaching us ${data.fullname}. We will get back to you as soon as possible. Please wait...` })
+        setTimeout(() => {
+            window.location.href = `https://wa.me/2349088888733?text=Hi%20My%20name%20is%20${fullname}%20and%20I%20am%20reaching%20out%20to%20inquire%about%20the%20flexipay%20plans`
+        }, 1500);
     }
 
     return (

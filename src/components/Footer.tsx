@@ -4,6 +4,7 @@ import { ASSETS_URL } from '../assets'
 import { LuArrowUpRight } from 'react-icons/lu'
 
 export default function Footer() {
+
     return (
         <>
             <footer className='relative z-20 bg-dark pt-10 md:pt-16 px-4'>
@@ -20,9 +21,9 @@ export default function Footer() {
                     </aside>
                     <aside className="space-y-1">
                         <h4 data-aos="fade-left" data-aos-delay="500" className="text-lg text-white font-semibold pb-2">Useful Links</h4>
-                        <Link data-aos="zoom-out" data-aos-delay="600" className='flex text-backdrop/70 hover:text-backdrop text-sm p-1' to="/"> About </Link>
-                        <Link data-aos="zoom-out" data-aos-delay="800" className='flex text-backdrop/70 hover:text-backdrop text-sm p-1' to="/"> Plans </Link>
-                        <Link data-aos="zoom-out" data-aos-delay="1000" className='flex text-backdrop/70 hover:text-backdrop text-sm p-1' to="/"> Contact </Link>
+                        <a data-aos="zoom-out" data-aos-delay="600" className='flex text-backdrop/70 hover:text-backdrop text-sm p-1' href={`/#about`}> About </a>
+                        <a data-aos="zoom-out" data-aos-delay="800" className='flex text-backdrop/70 hover:text-backdrop text-sm p-1' href={`/#plan`}> Plans </a>
+                        <a data-aos="zoom-out" data-aos-delay="1000" className='flex text-backdrop/70 hover:text-backdrop text-sm p-1' href={`/#contact`}> Contact </a>
                     </aside>
                     <aside className="space-y-1">
                         <h4 data-aos="fade-left" data-aos-delay="500" className="text-lg text-white font-semibold pb-2">Legal Links</h4>
@@ -40,9 +41,9 @@ export default function Footer() {
                     </div>
                 </div>
             </footer>
-            <button className="fixed right-4 bottom-4 z-50 bg-[#71869d1a] hover:bg-primary text-[#677788] hover:text-backdrop text-sm h-8 w-8 grid place-items-center rounded-full cursor-pointer">
+            <a href={`./#home`} className="fixed right-4 bottom-4 z-50 bg-[#71869d1a] hover:bg-primary text-[#677788] hover:text-backdrop text-sm h-8 w-8 grid place-items-center rounded-full cursor-pointer">
                 <RiArrowUpSLine />
-            </button>
+            </a>
         </>
     )
 }

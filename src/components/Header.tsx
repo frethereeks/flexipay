@@ -10,20 +10,22 @@ export default function Header() {
     useEffect(() => {
         // This effect can be used to handle any side effects when the location changes
         // For example, you might want to scroll to the top of the page on route change
-        window.scrollTo(0, 0);
+        return () => {
+            window.scrollTo(0, 0);
+        }
     }, [location.pathname]);
 
 
     const navLinks = [
-        { id: "1230", name: 'Home', path: '/' },
-        { id: "1231", name: 'About', path: './#about' },
-        { id: "1232", name: 'Plans', path: './#plan' },
-        { id: "1233", name: 'Contact', path: './#contact' },
-        { id: "1233", name: 'FAQs', path: './#faq' },
+        { id: "1230", name: 'Home', path: '' },
+        { id: "1231", name: 'About', path: 'about' },
+        { id: "1232", name: 'Plans', path: 'plan' },
+        { id: "1233", name: 'Contact', path: 'contact' },
+        { id: "1234", name: 'FAQs', path: 'faq' },
     ]
 
     return (
-        <header className='bg-white md:p-2 md:rounded-full fixed top-0 md:top-4 left-0 md:left-1/2 md:-translate-x-1/2 w-full md:container z-50 shadow-lg'>
+        <header id='home' className='bg-white md:p-2 md:rounded-full fixed top-0 md:top-4 left-0 md:left-1/2 md:-translate-x-1/2 w-full md:container z-50 shadow-lg'>
             <div className="container mx-auto relative flex justify-between md:items-center gap-4 p-4 md:p-0">
                 <Link to="/" className='flex items-center gap-2 w-[10rem] pr-2'>
                     <div className="h-10 rounded-full relative">
@@ -33,7 +35,7 @@ export default function Header() {
                 <nav className={`flex-1 bg-backdrop md:bg-white w-full absolute md:static top-full ${navOpen ? "left-0" : "left-full"} transition-all duration-300 flex flex-col md:flex-row justify-center md:items-center md:gap-2`}>
                     {
                         navLinks.map((link) => (
-                            <Link className={`${link.path === location.pathname ? 'text-white bg-dark' : 'text-primary hover:text-white hover:bg-dark'} font-semibold py-1.5 px-4 text-sm md:rounded-md`} key={link.id} to={link.path}>{link.name}</Link>
+                            <a className={`${link.path === location.pathname ? 'text-white bg-dark' : 'text-primary hover:text-white hover:bg-dark'} font-semibold py-1.5 px-4 text-sm md:rounded-md`} key={link.id} href={`/#${link.path}`}>{link.name}</a>
                         ))
                     }
                 </nav>

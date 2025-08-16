@@ -18,7 +18,7 @@ export default function ClientSection() {
           slidesPerView={1}
           loop={true}
           autoplay={{
-            delay: 5000,
+            delay: 8000,
           }}
           direction='horizontal'
           modules={[Autoplay]}
