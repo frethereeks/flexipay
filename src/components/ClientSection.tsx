@@ -13,7 +13,7 @@ export default function ClientSection() {
                 C4.4,5.6,4.4,4.9,4.4,4.5c0-1.6,0.8-2.9,2.5-3.7L7.1,1.3z"></path>
         </svg>
       </figure>
-      <div className="relative max-w-lg mx-auto gap-6 md:gap-8">
+      <div className="relative max-w-lg lg:max-w-xl mx-auto gap-6 md:gap-8">
         <Swiper
           slidesPerView={1}
           loop={true}
@@ -44,7 +44,7 @@ export default function ClientSection() {
           </SwiperSlide>
           <SwiperSlide className='relative w-full h-full'>
             <aside className="sm:col-span-2 md:col-span-3 flex-1 sm:py-10 space-y-8 text-center">
-              <p data-aos="fade-up" data-aos-delay="1000" className="text-base text-backdrop font-medium leading-relaxed py-4">"I can confidently say the best decision of my life is partnering with oakyard properties on the Jahi Resettlement Plan, I not only became a land owner but a house owner too!"</p>
+              <p data-aos="fade-up" data-aos-delay="1000" className="text-base text-backdrop font-medium leading-relaxed py-4">"I can confidently say the best decision of my life is partnering with oakyard properties on the Katampe Extension Housing Plan, I not only became a land owner but a house owner too!"</p>
               <div className="space-y-0">
                 <h5 data-aos="fade-up" data-aos-delay="1000" className="text-base text-backdrop/70 font-medium leading-tight">Mr. Chibuzo Ikechukwu</h5>
                 <p data-aos="fade-up" data-aos-delay="1000" className="text-xs text-text font-medium leading-relaxed">Katampe Extension Plan Beneficiary</p>

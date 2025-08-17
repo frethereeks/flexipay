@@ -1,4 +1,4 @@
-import { ChooseSection, ClientSection, ContactSection, HeroSection, PlanSection } from '../components'
+import { ChooseSection, ClientSection, ContactSection, HeroSection, PlanSection, ProjectSection } from '../components'
 
 export default function Home() {
 
@@ -12,6 +12,9 @@ export default function Home() {
             </section>
             <section id='about' className="relative">
                 <ChooseSection />
+            </section>
+            <section id='projects' className="relative">
+                <ProjectSection />
             </section>
             <section id='client' className="relative">
                 <ClientSection />

@@ -14,6 +14,10 @@ import building from "./flexipay_building.jpg"
 import orchid from "./flexipay_orchid.png" 
 import logo from "./oakyard_logo.png"
 
+import oakyard_kyami from "./oakyard_kyami.jpg" 
+import oakyard_orchid_vista from "./oakyard_orchid_vista.png" 
+import oakyard_tulip from "./oakyard_tulip.png"
+
 export const ASSETS_URL = {
     blackpeople,
     calculator,
@@ -29,4 +33,7 @@ export const ASSETS_URL = {
     building,
     orchid,
     logo,
+    oakyard_kyami,
+    oakyard_orchid_vista,
+    oakyard_tulip,
 }

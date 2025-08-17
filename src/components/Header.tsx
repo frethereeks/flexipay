@@ -7,6 +7,8 @@ export default function Header() {
     const location = useLocation()
     const [navOpen, setNavOpen] = useState(false)
 
+    const message = encodeURI(`Hi, I am interested in knowing more about the flexipay Kuje plans`)
+
     useEffect(() => {
         // For example, you might want to scroll to the top of the page on route change
         return () => {
@@ -19,7 +21,8 @@ export default function Header() {
         { id: "1230", name: 'Home', path: '' },
         { id: "1231", name: 'About', path: 'about' },
         { id: "1232", name: 'Plans', path: 'plan' },
-        { id: "1233", name: 'Contact', path: 'contact' },
+        { id: "1233", name: 'Projects', path: 'projects' },
+        { id: "1234", name: 'Contact', path: 'contact' },
     ]
 
     return (
@@ -38,7 +41,7 @@ export default function Header() {
                     }
                 </nav>
                 <div className="flex gap-2 w-max">
-                    <Link to="https://wa.me/2349088888733?text=Hi%20I%20want%20to%20know%20more%20about%20the%20flexipay%20plans" target="_blank" rel="noopener noreferrer" className="relative bg-green-500 hover:bg-green-600/70 rounded-full h-10 w-10 grid place-items-center text-2xl md:text-2xl font-light text-white">
+                    <Link to={`https://wa.me/2349088888733?text=${message}`} target="_blank" rel="noopener noreferrer" className="relative bg-green-500 hover:bg-green-600/70 rounded-full h-10 w-10 grid place-items-center text-2xl md:text-2xl font-light text-white">
                         <RiWhatsappLine />
                     </Link>
                     <div onClick={() => setNavOpen(!navOpen)} className="relative md:hidden h-10 w-10 grid place-items-center text-2xl text-primary bg-backdrop hover:bg-primary hover:text-white rounded-full cursor-pointer">

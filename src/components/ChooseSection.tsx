@@ -63,10 +63,10 @@ export default function ChooseSection() {
         <article className='relative overflow-hidden py-10 md:py-20'>
             <div className="h-60 w-60 md:h-96 md:w-96 rounded-full bg-[#dadfef] opacity-20 scale-x-125 absolute right-[80%] top-[75%]"></div>
             <div className="container mx-auto grid md:grid-cols-2 gap-6 md:gap-8">
-                <aside className="p-4 flex flex-col justify-center relative before:absolute before:h-10 before:w-10 md:before:h-12 md:before:w-12 before:border-2 md:before:border-4 before:border-backdrop before:bg-primary before:top-0 before:right-6 before:rounded-full">
+                <aside className="p-4 flex flex-col justify-center relative">
                     <div className="space-y-0 max-w-2xl mx-auto">
                         <h2 data-aos="fade-up" data-aos-delay="100" className="text-2xl md:text-2xl text-primary font-semibold">Why Choose Flexipay</h2>
-                        <h4 data-aos="fade-up" data-aos-delay="500" className="text-dark text-2xl md:text-4xl font-bold">Land Acquisition Plan?</h4>
+                        <h4 data-aos="fade-up" data-aos-delay="500" className="text-dark text-2xl md:text-4xl font-bold relative before:absolute before:h-10 before:w-10 md:before:h-12 md:before:w-12 before:border-2 md:before:border-4 before:border-backdrop before:bg-primary before:-top-14 before:left-3/4 before:rounded-full">Land Acquisition Plan?</h4>
                         <p data-aos="fade-up" data-aos-delay="1000" className="text-base text-text font-medium leading-relaxed py-4">We are geared towards elevating the real-estate standard, house ownership plans by providing comprehensive solutions tailored to your unique project needs to ensure quality, efficient and an incredible level of client satisfaction every step of the way.</p>
                         <a data-aos="fade-right" data-aos-delay="1500" href={`${pathname}#contact`} className="relative flex gap-2 items-center self-center w-max mt-2 px-6 md:px-8 py-1.5 h-max border border-primary hover:bg-transparent bg-primary hover:text-primary text-white text-base font-semibold rounded-sm">Get Started <LuArrowUpRight className="text-xs" /></a>
                     </div>
