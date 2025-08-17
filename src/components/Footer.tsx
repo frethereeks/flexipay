@@ -41,7 +41,7 @@ export default function Footer() {
                     </div>
                 </div>
             </footer>
-            <a href={`./#home`} className="fixed right-4 bottom-4 z-50 bg-[#71869d1a] hover:bg-primary text-[#677788] hover:text-backdrop text-sm h-8 w-8 grid place-items-center rounded-full cursor-pointer">
+            <a href={`./#root`} className="fixed right-4 bottom-4 z-50 bg-[#71869d1a] hover:bg-primary text-[#677788] hover:text-backdrop text-sm h-8 w-8 grid place-items-center rounded-full cursor-pointer">
                 <RiArrowUpSLine />
             </a>
         </>

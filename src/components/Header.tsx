@@ -8,19 +8,11 @@ export default function Header() {
     const [navOpen, setNavOpen] = useState(false)
 
     useEffect(() => {
-        // This effect can be used to handle any side effects when the location changes
         // For example, you might want to scroll to the top of the page on route change
         return () => {
             window.scrollTo(0, 0);
         }
     }, [location.pathname]);
-    
-    const handlePathChange = () => {
-        console.log({ location })
-        if (location.pathname === "/" || location.pathname === "/#") {
-            // setCurrentPage()
-        }
-    }
 
 
     const navLinks = [
@@ -28,7 +20,6 @@ export default function Header() {
         { id: "1231", name: 'About', path: 'about' },
         { id: "1232", name: 'Plans', path: 'plan' },
         { id: "1233", name: 'Contact', path: 'contact' },
-        { id: "1234", name: 'FAQs', path: 'faq' },
     ]
 
     return (
@@ -42,7 +33,7 @@ export default function Header() {
                 <nav className={`flex-1 bg-backdrop md:bg-white w-full absolute md:static top-full ${navOpen ? "left-0" : "left-full"} transition-all duration-300 flex flex-col md:flex-row justify-center md:items-center md:gap-2`}>
                     {
                         navLinks.map((link) => (
-                            <a onClick={handlePathChange} className={`${link.path !== '' && location.hash.includes(link.path) ? 'text-white bg-dark' : 'text-primary hover:text-white hover:bg-dark'} font-semibold py-1.5 px-4 text-sm md:rounded-md`} key={link.id} href={`/#${link.path}`}>{link.name}</a>
+                            <a className={`${link.path !== '' && location.hash.includes(link.path) ? 'text-white bg-dark' : 'text-primary hover:text-white hover:bg-dark'} font-semibold py-1.5 px-4 text-sm md:rounded-md`} key={link.id} href={`/#${link.path}`}>{link.name}</a>
                         ))
                     }
                 </nav>
